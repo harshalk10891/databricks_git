@@ -12,15 +12,12 @@ claims_df = read_bronze_json("Claims")
 
 # COMMAND ----------
 
-df_row_columns(claims_df)
-
-# COMMAND ----------
-
 check_missing_values(claims_df,claims_df.columns)
 
 # COMMAND ----------
 
 display(claims_df.limit(5))
+display(claims_df.limit(10))
 
 # COMMAND ----------
 
